@@ -1,32 +1,179 @@
-$primary-color: #55A;
-$secondary-color: #458545;
+/**
+Declaration of variables
+ */
+$primary-color: #16212b;
+$secondary-color: #4c9e9e;
 $text-color: #666;
 $text-color-error: #ee5253;
+$general-typography: "Arial";
+$secondary-typography: "Trebuchet MS";
 
-$tipografia-general: "Arial";
+body {
+  display: block;
+  margin: 0px;
+}
 
 /**
 Main styles to use within the entire application
  */
-.main-style {
+a {
+  color: $text-color;
+  font-family: $general-typography;
+}
 
+h1 {
+  color: $primary-color;
+  font-family: $general-typography;
+}
+
+p {
+  color: $secondary-color;
+  font-family: $general-typography;
+}
+
+.container {
+  margin: 5% 10% 0% 10%;
+}
+
+.error-page {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.basic-layout {
+  display: flex;
+  height: 60px;
+  background-color: $primary-color;
+  img {
+    background-color: #16212b;
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.3);
+      //Compatibilidades
+      -webkit-box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+//MENU
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $primary-color;
+  color: #fff;
   a {
-    color: $text-color;
-    font-family: $tipografia-general;
+    color: #fff;
+    text-decoration: none;
   }
-
-  h1 {
-    color: $primary-color;
-    font-family: $tipografia-general;
+  ul {
+    position: absolute;
+    right: 20px;
   }
+}
 
-  p {
-    color: $secondary-color;
-    font-family: $tipografia-general;
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 15px;
+  li {
+    padding: 5px 14px;
+    list-style: none;
+    &:hover {
+      background-color: $secondary-color;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
   }
+}
 
-  .error-page {
-    margin-top: 10%;
+.services {
+  position: relative;
+  .dropdown {
+    background-color: $primary-color;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 28px;
+    right: -20px;
+    li + li {
+      margin-top: 10px;
+    }
+    li {
+      padding: 0.5em 1em;
+      width: 8em;
+      text-align: center;
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+.services:hover .dropdown {
+  display: block;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+//Hamburger
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display:none;
+    position: absolute;
+    background-color:$primary-color;
+    right: 0;
+    left: 0;
+    top: 60px;
     text-align: center;
+    padding: 16px 0;
+    li:hover {
+      display: inline-block;
+      background-color:#4c9e9e;
+      transition: 0.3s ease;
+    }
+    li + li {
+      margin-top: 12px;
+    }
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    top: 15px;
+    right: 20px;
+    position: absolute;
+  }
+
+  .navbar {
+    ul {
+      display: block;
+      position: inherit;
+    }
+  }
+
+  .dropdown {
+    top: 30px;
+    li:hover {
+      background-color: #4c9e9e;
+    }
   }
 }

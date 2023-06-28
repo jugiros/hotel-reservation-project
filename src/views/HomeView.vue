@@ -36,7 +36,6 @@ const arrDays = [
 const validHotel = (arrDays: Day[], rewardClient: boolean) => {
   hotel.value = getBestOffer(arrDays, rewardClient);
   hotelName = hotel.value?.name;
-  console.log(hotel.value);
 };
 
 validHotel(arrDays, true);

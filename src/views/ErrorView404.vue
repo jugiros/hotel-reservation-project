@@ -23,5 +23,8 @@
   img {
     width: 80px;
   }
+  a {
+    text-decoration: none;
+  }
 }
 </style>

@@ -1,14 +1,24 @@
 <template>
-  <div>
-    <div>
-      <router-link to="/">Inicio </router-link> |
-      <router-link to="/about">Acerca de</router-link> |
-      <router-link to="/new">Nuevo</router-link>
-    </div>
-  </div>
+  <nav class="navbar">
+    <ul>
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <div class="menu">
+        <li><router-link class="router-style" to="/">Inicio</router-link></li>
+        <li>
+          <router-link class="router-style" to="/about">Acerca de</router-link>
+        </li>
+        <li class="services">
+          <a class="router-style">Hoteles</a>
+          <ul class="dropdown">
+            <li><router-link class="router-style" to="/new">Hoteles 1</router-link></li>
+            <li><router-link class="router-style" to="/new">Hoteles 2</router-link></li>
+            <li><router-link class="router-style" to="/new">Hoteles 3</router-link></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
 </template>
-
-<script>
+<script setup lang="ts">
 </script>
-
-<style scoped lang="scss"></style>
