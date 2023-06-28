@@ -1,13 +1,13 @@
 {
   "arrHotels": [
     {
-      "id": 1,
-      "name": "Lakewood",
-      "qualification": 3,
-      "regularCost": 110,
-      "rewardCost": 80,
-      "regularCostWeekend": 90,
-      "rewardCostWeekend": 80
+      "id": 3,
+      "name": "Ridgewood",
+      "qualification": 5,
+      "regularCost": 220,
+      "rewardCost": 100,
+      "regularCostWeekend": 150,
+      "rewardCostWeekend": 40
     },
     {
       "id": 2,
@@ -19,13 +19,13 @@
       "rewardCostWeekend": 50
     },
     {
-      "id": 3,
-      "name": "Ridgewood",
-      "qualification": 5,
-      "regularCost": 150,
-      "rewardCost": 100,
+      "id": 1,
+      "name": "Lakewood",
+      "qualification": 3,
+      "regularCost": 110,
+      "rewardCost": 80,
       "regularCostWeekend": 90,
-      "rewardCostWeekend": 40
+      "rewardCostWeekend": 80
     }
   ]
 }
