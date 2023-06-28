@@ -6,28 +6,20 @@ describe("HelloWorld.vue", () => {
     const arrDays = [
       {
         id: 0,
-        weekend: true,
+        weekend: false,
       },
       {
         id: 1,
-        weekend: true,
-      },
-      {
-        id: 2,
-        weekend: true,
-      },
-      {
-        id: 2,
         weekend: false,
       },
       {
         id: 2,
         weekend: false,
-      },
+      }
     ];
 
     const wrapper = shallowMount(HelloWorld);
-    wrapper.vm.validHotel(arrDays, true);
-    expect(wrapper.vm.hotelName).toBe("Ridgewood");
+    wrapper.vm.validHotel(arrDays, false);
+    expect(wrapper.vm.hotelName).toBe("Lakewood");
   });
 });
