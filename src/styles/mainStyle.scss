@@ -1,0 +1,32 @@
+$primary-color: #55A;
+$secondary-color: #458545;
+$text-color: #666;
+$text-color-error: #ee5253;
+
+$tipografia-general: "Arial";
+
+/**
+Main styles to use within the entire application
+ */
+.main-style {
+
+  a {
+    color: $text-color;
+    font-family: $tipografia-general;
+  }
+
+  h1 {
+    color: $primary-color;
+    font-family: $tipografia-general;
+  }
+
+  p {
+    color: $secondary-color;
+    font-family: $tipografia-general;
+  }
+
+  .error-page {
+    margin-top: 10%;
+    text-align: center;
+  }
+}

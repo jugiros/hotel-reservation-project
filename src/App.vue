@@ -1,9 +1,13 @@
 <template>
-  <basic-layout />
-  <router-view />
+  <div class="main-style">
+    <basic-layout />
+    <router-view />
+  </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./styles/mainStyle";
+</style>
 
 <script setup lang="ts">
 import BasicLayout from "@/layouts/BasicLayout.vue";

@@ -1,8 +1,27 @@
 <template>
-  <h1>Error 404</h1>
-  <div class="return-home"><router-link to="/">IR AL INICIO</router-link></div>
+  <div class="error-page">
+    <h1>Error 404</h1>
+    <img src="../assets/warning.png">
+    <p>Página no encontrada</p>
+    <router-link to="/">Volver al inicio</router-link>
+  </div>
 </template>
 
-<script></script>
+<script>
+</script>
 
-<style lang="scss" scoped></style>
+<style scoped lang="scss">
+.error-page {
+  h1 {
+    color: #ee5253;
+  }
+  p {
+    font-weight: bold;
+    font-size: 25px;
+    color: #6b6b6b;
+  }
+  img {
+    width: 80px;
+  }
+}
+</style>
