@@ -30,7 +30,7 @@ const validCostHotelData = (arrCostHotel: CostHotel[]):Hotel => {
  * costs for each hotel.
  * @param days
  */
-const getBestOffer = async (days: Day[], rewardClient: boolean): Promise<Hotel> => {
+const getBestOffer = (days: Day[], rewardClient: boolean): Hotel => {
   const arrHotels: Hotel[] = dataSet.arrHotels;
   const arrCostHotel: CostHotel[] = [];
 
