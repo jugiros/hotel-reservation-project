@@ -1,18 +1,46 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <h1>Estamos de pago</h1>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+<script setup lang="ts">
+import { ref } from "vue";
+import { Hotel } from "@/interfaces/hotel";
+import { Day } from "@/interfaces/day";
+import getBestOffer from "../../helpers/functions";
 
-@Options({
-  components: {
-    HelloWorld,
+let hotel = ref<Hotel>();
+let hotelName = "";
+
+const arrDays = [
+  {
+    id: 0,
+    weekend: true,
   },
-})
-export default class HomeView extends Vue {}
+  {
+    id: 1,
+    weekend: true,
+  },
+  {
+    id: 2,
+    weekend: true,
+  },
+  {
+    id: 2,
+    weekend: false,
+  },
+  {
+    id: 2,
+    weekend: false,
+  },
+];
+const validHotel = (arrDays: Day[], rewardClient: boolean) => {
+  hotel.value = getBestOffer(arrDays, rewardClient);
+  hotelName = hotel.value?.name;
+  console.log(hotel.value);
+};
+
+validHotel(arrDays, true);
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss"></style>
