@@ -119,7 +119,7 @@ button {
 }
 
 .container-app {
-  margin: 3% 5% 5% 5%;
+  margin: 3% 5% 10% 5%;
 }
 
 .container-book-hotel {
@@ -330,6 +330,13 @@ input[type=checkbox] {
   }
 }
 
+//GALLERY TO HOTEL CARD
+.gallery {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 33rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
 
 @media (max-width: 479px) {
   .container-book-hotel {

@@ -6,7 +6,7 @@ export interface Hotel {
   rewardCost: number;
   regularCostWeekend: number;
   rewardCostWeekend: number;
-  nameVista: number;
-  linkImg: number;
+  nameVista: string;
+  linkImg: string;
   description: string;
 }
