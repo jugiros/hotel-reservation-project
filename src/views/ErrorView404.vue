@@ -1,14 +1,13 @@
 <template>
   <div class="error-page">
     <h1>Error 404</h1>
-    <img src="../assets/warning.png">
+    <img src="../assets/warning.png" />
     <p>Página no encontrada</p>
     <router-link to="/">Volver al inicio</router-link>
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style scoped lang="scss">
 .error-page {

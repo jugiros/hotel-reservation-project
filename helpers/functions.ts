@@ -59,7 +59,6 @@ const getBestOffer = (days: Day[], rewardClient: boolean): Hotel => {
     })
   })
 
-  console.log(arrCostHotel);
   return validCostHotelData(arrCostHotel);
 };
 

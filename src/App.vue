@@ -1,12 +1,13 @@
 <template>
   <basic-layout />
-  <div class="container">
+  <div class="container-app">
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
 @import "./styles/mainStyle";
+@import "./styles/modal.css";
 </style>
 
 <script setup lang="ts">

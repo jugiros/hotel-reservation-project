@@ -4,12 +4,14 @@
       <img src="../assets/hotel.png" />
     </router-link>
     <label>Reserva tu hotel</label>
-    <menu-principal />
+    <main-menu />
   </div>
+  <book-hotel/>
 </template>
 
 <script setup>
-import MenuPrincipal from "@/components/MenuPrincipal.vue";
+import MainMenu from "@/components/MainMenu.vue";
+import BookHotel from "@/components/BookHotel.vue";
 </script>
 
 <style scoped lang="scss">
