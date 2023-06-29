@@ -14,23 +14,23 @@ let hotelName = "";
 
 const arrDays = [
   {
-    id: 0,
+    dateString: "string",
     weekend: true,
   },
   {
-    id: 1,
+    dateString: "string",
     weekend: true,
   },
   {
-    id: 2,
+    dateString: "string",
     weekend: true,
   },
   {
-    id: 2,
+    dateString: "string",
     weekend: false,
   },
   {
-    id: 2,
+    dateString: "string",
     weekend: false,
   },
 ];
