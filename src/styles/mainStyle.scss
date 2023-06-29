@@ -3,7 +3,7 @@ Declaration of variables
  */
 $primary-color: #16212b;
 $primary-color-hover: #273949;
-$secondary-color: #4c9e9e;
+$secondary-color: #354a5d;
 $succes-color: #2f6223;
 $border-input-color: #adadad;
 $warning-color: orange;
@@ -11,10 +11,13 @@ $text-color: #666;
 $text-color-error: #ee5253;
 $general-typography: "Arial";
 $secondary-typography: "Trebuchet MS";
+$footer-color: #354a5d;
 
 body {
-  display: block;
   margin: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /**
@@ -40,13 +43,18 @@ h3 {
   font-family: $general-typography;
 }
 
+h4 {
+  color: $primary-color;
+  font-family: $general-typography;
+}
+
 hr {
   margin: 10px 30px 10px 30px;
   opacity: 0.6;
 }
 
 p {
-  color: $secondary-color;
+  color: $text-color;
   font-family: $general-typography;
 }
 
@@ -91,7 +99,7 @@ button {
 .warning-button {
   background-color: $warning-color;
   &:hover {
-    background-color: #fdb049;
+    background-color: #fdb351;
     transition: 0.3s ease;
   }
 }
@@ -103,11 +111,41 @@ button {
   }
   img {
     width: 20px;
+    &:hover {
+      width: 23px;
+      transition: 0.3s ease;
+    }
   }
 }
 
 .container-app {
   margin: 3% 5% 5% 5%;
+}
+
+.container-book-hotel {
+  margin: 90px 30% 0px 30%;
+  ul {
+    list-style: none;
+  }
+  li {
+    color: #16212b;
+    font-weight: bold;
+    font-family: "Arial";
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  label {
+    cursor: pointer;
+  }
+  .book-hotel {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .btn-date {
+    width: 100%;
+  }
 }
 
 .error-page {
@@ -116,9 +154,12 @@ button {
 }
 
 .basic-layout {
+  position: fixed;
+  width: 100%;
   display: flex;
   height: 60px;
   background-color: $primary-color;
+  z-index: 3;
   img {
     background-color: #16212b;
     position: absolute;
@@ -133,6 +174,18 @@ button {
       -moz-box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.3);
     }
   }
+}
+
+.footer-layout {
+  position: fixed;
+  bottom: 0px;
+  background-color: $footer-color;
+  width: 100%;
+  height: 50px;
+  margin-top: auto;
+  display: table;
+  color:#fff;
+  text-align: center;
 }
 
 //MENU
@@ -270,5 +323,16 @@ input[type=checkbox] {
     li:hover {
       background-color: #4c9e9e;
     }
+  }
+
+  .container-book-hotel {
+    margin: 90px 20% 0px 20%;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .container-book-hotel {
+    margin: 90px 5% 0px 5%;
   }
 }

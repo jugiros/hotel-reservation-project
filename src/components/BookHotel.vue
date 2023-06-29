@@ -52,36 +52,3 @@
 </template>
 
 <script setup lang="ts"></script>
-
-<style lang="scss" scoped>
-.container-book-hotel {
-  margin: 30px 30% 0px 30%;
-  ul {
-    list-style: none;
-  }
-  h3 {
-    text-align: center;
-    margin-bottom: 0px;
-  }
-  label {
-    cursor: pointer;
-  }
-  .book-hotel {
-    text-align: center;
-    margin-top: 0px;
-  }
-  .btn-date {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .container-book-hotel {
-    margin: 30px 20% 0px 20%;
-  }
-}
-@media (max-width: 479px) {
-  .container-book-hotel {
-    margin: 30px 5% 0px 5%;
-  }
-}
-</style>

@@ -3,6 +3,7 @@
   <div class="container-app">
     <router-view />
   </div>
+  <footer-layout/>
 </template>
 
 <style lang="scss">
@@ -12,4 +13,5 @@
 
 <script setup lang="ts">
 import BasicLayout from "@/layouts/BasicLayout.vue";
+import FooterLayout from "@/layouts/FooterLayout.vue";
 </script>

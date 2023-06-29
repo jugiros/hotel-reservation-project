@@ -5,9 +5,6 @@
       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       <div class="menu">
         <li><router-link class="router-style" to="/">Inicio</router-link></li>
-        <li>
-          <router-link class="router-style" to="/about">Acerca de</router-link>
-        </li>
         <li class="services">
           <a class="router-style">Hoteles</a>
           <ul class="dropdown">
@@ -17,7 +14,10 @@
           </ul>
         </li>
         <li>
-          <router-link class="router-style" to="/new">Prueba 404</router-link>
+          <router-link class="router-style" to="/about">Documentación</router-link>
+        </li>
+        <li>
+          <router-link class="router-style" to="/error-page">Prueba 404</router-link>
         </li>
       </div>
     </ul>
