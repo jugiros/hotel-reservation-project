@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "FooterLayout"
-}
-</script>
-
 <style scoped lang="scss">
 .footer-layout {
   p {

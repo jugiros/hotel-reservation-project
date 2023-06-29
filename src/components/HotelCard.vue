@@ -24,10 +24,7 @@
 <script setup lang="ts">
 import { useHotelStore } from "@/stores/hotel";
 import QualificationStars from "@/components/QualificationStars.vue";
-
 const hotelStore = useHotelStore();
-
-hotelStore.getHotelDataSet();
 </script>
 
 <style />

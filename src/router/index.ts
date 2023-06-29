@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
+/**
+ * Function to load views using lazy loading.
+ * @param view
+ */
 const loadComponent = (view: any) => {
   return () => import(`../views/${view}.vue`);
 }

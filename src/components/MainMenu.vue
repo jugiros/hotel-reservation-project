@@ -8,20 +8,30 @@
         <li class="services">
           <a class="router-style">Hoteles</a>
           <ul class="dropdown">
-            <li><router-link class="router-style" to="/new">Hoteles 1</router-link></li>
-            <li><router-link class="router-style" to="/new">Hoteles 2</router-link></li>
-            <li><router-link class="router-style" to="/new">Hoteles 3</router-link></li>
+            <li v-for="(hotel, index) in hotelStore.arrHotels" :key="index">
+              <router-link class="router-style" :to="'/' + hotel.nameVista"
+                >{{ hotel.name }}</router-link
+              >
+            </li>
           </ul>
         </li>
         <li>
-          <router-link class="router-style" to="/about">Documentación</router-link>
+          <router-link class="router-style" to="/about"
+            >Documentación</router-link
+          >
         </li>
         <li>
-          <router-link class="router-style" to="/error-page">Prueba 404</router-link>
+          <router-link class="router-style" to="/error-page"
+            >Prueba 404</router-link
+          >
         </li>
       </div>
     </ul>
   </nav>
 </template>
 <script setup lang="ts">
+import { useHotelStore } from "@/stores/hotel";
+const hotelStore = useHotelStore();
+
+hotelStore.getHotelDataSet();
 </script>

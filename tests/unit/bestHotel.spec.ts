@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import HomeView from "@/views/HomeView.vue";
 
 describe("HelloWorld.vue", () => {
   it("Validate the best hotel for the reservation", () => {
@@ -18,7 +18,7 @@ describe("HelloWorld.vue", () => {
       }
     ];
 
-    const wrapper = shallowMount(HelloWorld);
+    const wrapper = shallowMount(HomeView);
     wrapper.vm.validHotel(arrDays, false);
     expect(wrapper.vm.hotelName).toBe("Lakewood");
   });
