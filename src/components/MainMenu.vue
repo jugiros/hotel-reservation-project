@@ -9,9 +9,9 @@
           <a class="router-style">Hoteles</a>
           <ul class="dropdown">
             <li v-for="(hotel, index) in hotelStore.arrHotels" :key="index">
-              <router-link class="router-style" :to="'/' + hotel.nameVista"
-                >{{ hotel.name }}</router-link
-              >
+              <router-link class="router-style" :to="'/' + hotel.nameVista">{{
+                hotel.name
+              }}</router-link>
             </li>
           </ul>
         </li>
@@ -32,6 +32,5 @@
 <script setup lang="ts">
 import { useHotelStore } from "@/stores/hotel";
 const hotelStore = useHotelStore();
-
 hotelStore.getHotelDataSet();
 </script>

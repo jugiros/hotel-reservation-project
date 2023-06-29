@@ -21,6 +21,21 @@ const routes: Array<RouteRecordRaw> = [
     component: loadComponent('AboutView')
   },
   {
+    path: '/ridgewood',
+    name: 'ridgewood',
+    component: loadComponent('RidgewoodView')
+  },
+  {
+    path: '/bridgewood',
+    name: 'bridgewood',
+    component: loadComponent('BridgewoodView')
+  },
+  {
+    path: '/lakewood',
+    name: 'lakewood',
+    component: loadComponent('LakewoodView')
+  },
+  {
     path: '/:catchAll(.*)',
     name: 'error404',
     component: loadComponent('ErrorView404')

@@ -1,7 +1,7 @@
-import { Day } from "../src/interfaces/day";
-import { Hotel } from "../src/interfaces/hotel";
-import * as dataSet from "../documents/dataSet.json";
-import {CostHotel} from "../src/interfaces/costHotel";
+import { Day } from "../interfaces/day";
+import { Hotel } from "../interfaces/hotel";
+import * as dataSet from "../../documents/dataSet.json";
+import {CostHotel} from "../interfaces/costHotel";
 
 /**
  * Function to validate the array of hotel costs and return the cheapest in the array.

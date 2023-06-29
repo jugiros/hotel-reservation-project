@@ -7,9 +7,9 @@
     >
       <img :src="hotel.linkImg" />
       <div class="container-app">
-        <h4>
+        <h3>
           <b>{{ hotel.name }}</b>
-        </h4>
+        </h3>
         <p>{{ hotel.description }}</p>
         <qualification-stars :qualification="hotel.qualification"/>
         <h4><b>Costo cliente normal</b></h4>
