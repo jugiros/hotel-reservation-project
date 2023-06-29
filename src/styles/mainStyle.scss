@@ -5,6 +5,7 @@ $primary-color: #16212b;
 $primary-color-hover: #273949;
 $secondary-color: #4c9e9e;
 $succes-color: #2f6223;
+$border-input-color: #adadad;
 $warning-color: orange;
 $text-color: #666;
 $text-color-error: #ee5253;
@@ -39,6 +40,11 @@ h3 {
   font-family: $general-typography;
 }
 
+hr {
+  margin: 10px 30px 10px 30px;
+  opacity: 0.6;
+}
+
 p {
   color: $secondary-color;
   font-family: $general-typography;
@@ -48,7 +54,7 @@ input {
   height: 30px;
   border: solid 1px;
   border-radius: 8px;
-  border-color: $primary-color;
+  border-color: $border-input-color;
   min-width: 200px;
   margin: 8px;
   font-size: 18px;
@@ -101,7 +107,7 @@ button {
 }
 
 .container-app {
-  margin: 0% 5% 0% 5%;
+  margin: 3% 5% 5% 5%;
 }
 
 .error-page {
@@ -137,6 +143,7 @@ button {
   padding: 20px;
   background-color: $primary-color;
   color: #fff;
+  z-index: 3;
   a {
     color: #fff;
     text-decoration: none;
@@ -193,6 +200,24 @@ input[type=checkbox] {
   display: none;
 }
 
+//CARD
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 100%;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container-card {
+    padding: 2px 16px;
+  }
+  img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
 //Hamburger
 .hamburger {
   display: none;
@@ -211,6 +236,7 @@ input[type=checkbox] {
     top: 60px;
     text-align: center;
     padding: 16px 0;
+    z-index: 3;
     li:hover {
       display: inline-block;
       background-color:#4c9e9e;

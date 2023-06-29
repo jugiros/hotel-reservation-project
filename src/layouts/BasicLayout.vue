@@ -7,6 +7,7 @@
     <main-menu />
   </div>
   <book-hotel/>
+  <hr>
 </template>
 
 <script setup>

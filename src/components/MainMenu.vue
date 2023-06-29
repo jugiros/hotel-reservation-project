@@ -16,6 +16,9 @@
             <li><router-link class="router-style" to="/new">Hoteles 3</router-link></li>
           </ul>
         </li>
+        <li>
+          <router-link class="router-style" to="/new">Prueba 404</router-link>
+        </li>
       </div>
     </ul>
   </nav>

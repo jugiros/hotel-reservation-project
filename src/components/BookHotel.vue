@@ -1,9 +1,9 @@
 <template>
   <div class="container-book-hotel">
     <h3>Valida las fechas para tu reserva</h3>
-    <div class="book-hotel grid-container">
+    <div class="book-hotel">
       <button class="btn-date">
-        <label for="btn-modal"> Fechas </label>
+        <label for="btn-modal"> Agregar fechas </label>
       </button>
       <input type="checkbox" id="btn-modal" />
       <div class="container-modal">
@@ -21,16 +21,23 @@
                 <img src="../assets/borrar.png" alt="x" />
               </button>
             </li>
-            <li>20 de enero del 2022<button class="delete-button">
-              <img src="../assets/borrar.png" alt="x" />
-            </button></li>
-            <li>20 de enero del 2022<button class="delete-button">
-              <img src="../assets/borrar.png" alt="x" />
-            </button></li>
-            <li>20 de enero del 2022<button class="delete-button">
-              <img src="../assets/borrar.png" alt="x" />
-            </button></li>
+            <li>
+              20 de enero del 2022<button class="delete-button">
+                <img src="../assets/borrar.png" alt="x" />
+              </button>
+            </li>
+            <li>
+              20 de enero del 2022<button class="delete-button">
+                <img src="../assets/borrar.png" alt="x" />
+              </button>
+            </li>
+            <li>
+              20 de enero del 2022<button class="delete-button">
+                <img src="../assets/borrar.png" alt="x" />
+              </button>
+            </li>
           </ul>
+          <hr>
           <div>
             <button>Buscar Hotel</button>
             <button class="warning-button">
@@ -44,8 +51,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
 .container-book-hotel {

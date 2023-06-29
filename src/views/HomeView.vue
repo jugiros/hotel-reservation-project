@@ -1,5 +1,5 @@
 <template>
-  <h1>Estamos de pago</h1>
+  <hotel-card />
 </template>
 
 <script setup lang="ts">
@@ -7,6 +7,7 @@ import { ref } from "vue";
 import { Hotel } from "@/interfaces/hotel";
 import { Day } from "@/interfaces/day";
 import getBestOffer from "../../helpers/functions";
+import HotelCard from "@/components/HotelCard.vue";
 
 let hotel = ref<Hotel>();
 let hotelName = "";
