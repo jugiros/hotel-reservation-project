@@ -1,5 +1,5 @@
 <template>
-  <div class="container-best-hotel">
+  <div class="container-views">
     <div class="div-content-img">
       <img :src="viewHotel.linkImg" />
     </div>
@@ -25,25 +25,7 @@ import QualificationStars from "@/components/QualificationStars.vue";
 import {Hotel} from "@/interfaces/hotel";
 
 // eslint-disable-next-line no-undef
-const props = defineProps<{
+defineProps<{
   viewHotel: Hotel
 }>();
 </script>
-
-<style scoped lang="scss">
-.container-best-hotel {
-  margin: 5% 10% 20% 10%;
-  .label-best-hotel {
-    color: #6b6b6b;
-    font-size: 20px;
-  }
-  .div-content-img {
-    text-align: center;
-    img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-    }
-  }
-}
-</style>

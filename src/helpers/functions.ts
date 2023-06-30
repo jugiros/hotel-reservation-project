@@ -49,7 +49,7 @@ const getBestOffer = (days: Day[], rewardClient: boolean): Hotel => {
 
   let cost = 0;
 
-  days.forEach((day, index) => {
+  days.forEach((day) => {
     arrHotels.forEach((hotel, index) => {
       if (day.weekend) {
         if (rewardClient) {

@@ -313,6 +313,23 @@ input[type=checkbox] {
   }
 }
 
+// Views Container
+.container-views {
+  margin: 5% 10% 20% 10%;
+  .label-best-hotel {
+    color: #6b6b6b;
+    font-size: 20px;
+  }
+  .div-content-img {
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+  }
+}
+
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
   .menu {

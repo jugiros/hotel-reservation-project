@@ -5,7 +5,7 @@ import HomeView from '../views/HomeView.vue'
  * Function to load views using lazy loading.
  * @param view
  */
-const loadComponent = (view: any) => {
+const loadComponent = (view: string) => {
   return () => import(`../views/${view}.vue`);
 }
 
@@ -18,7 +18,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/about',
     name: 'about',
-    component: loadComponent('AboutView')
+    component: loadComponent('DocumentationView')
   },
   {
     path: '/ridgewood',
