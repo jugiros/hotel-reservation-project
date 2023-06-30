@@ -6,7 +6,7 @@
 import { ref } from "vue";
 import { Hotel } from "@/interfaces/hotel";
 import { Day } from "@/interfaces/day";
-import getBestOffer from "@/helpers/functions";
+import { getBestOffer } from "@/helpers/functions";
 import HotelCard from "@/components/HotelCard.vue";
 
 let hotel = ref<Hotel>();
