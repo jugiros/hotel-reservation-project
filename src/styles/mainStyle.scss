@@ -58,7 +58,26 @@ p {
   font-family: $general-typography;
 }
 
+label {
+  color: #fff;
+  font-family: $general-typography;
+}
+
 input {
+  height: 30px;
+  border: solid 1px;
+  border-radius: 8px;
+  border-color: $border-input-color;
+  min-width: 200px;
+  margin: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  &:hover {
+    border-color: $primary-color-hover;
+  }
+}
+
+select {
   height: 30px;
   border: solid 1px;
   border-radius: 8px;
@@ -144,7 +163,9 @@ button {
     margin-top: 0px;
   }
   .btn-date {
-    width: 100%;
+    width: auto;
+    font-size: 22px;
+    font-weight: 700;
   }
 }
 
@@ -278,6 +299,20 @@ input[type=checkbox] {
   user-select: none;
 }
 
+//QUALIFICATION
+.ec-stars-wrapper {
+  font-size: 0;
+  display: inline-block;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    font-size: 2rem;
+
+    color: #dbc200;
+  }
+}
+
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
   .menu {
@@ -328,14 +363,6 @@ input[type=checkbox] {
   .container-book-hotel {
     margin: 90px 20% 0px 20%;
   }
-}
-
-//GALLERY TO HOTEL CARD
-.gallery {
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: 33rem;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
 @media (max-width: 479px) {

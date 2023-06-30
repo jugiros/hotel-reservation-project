@@ -19,6 +19,8 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
+    max-height: 450px;
+    overflow-y: scroll;
 }
 .content-modal h2{
     margin-bottom: 15px;
