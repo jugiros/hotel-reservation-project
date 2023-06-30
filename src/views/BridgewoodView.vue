@@ -1,13 +1,15 @@
 <template>
-<h1>Bridgewood</h1>
+<view-hotel :view-hotel="hotel[0]"/>
 </template>
 
-<script>
-export default {
-  name: "BridgewoodView"
-}
+<script setup lang="ts">
+import ViewHotel from "@/components/viewHotel.vue";
+import {useHotelStore} from "@/stores/hotel"
+import {Hotel} from "@/interfaces/hotel";
+
+const hotelStore = useHotelStore();
+const hotel: Hotel[] = hotelStore.arrHotels.filter((hotel) => {
+  return hotel.name == "Bridgewood";
+})
+
 </script>
-
-<style scoped>
-
-</style>
