@@ -5,7 +5,9 @@
       <button>
         <label for="btn-modal"> Agregar información </label>
       </button>
-      <button class="warning-button" @click="restartProcess">Limpiar datos</button>
+      <button class="warning-button" @click="restartProcess">
+        Limpiar datos
+      </button>
       <input type="checkbox" id="btn-modal" />
       <div class="container-modal">
         <div class="content-modal">
@@ -116,7 +118,7 @@ const searchHotel = () => {
     console.log(hotel);
     hotelStore.setViewHotel(true);
     hotelStore.setBestHotel(hotel);
-    router.push({name: "home"});
+    router.push({ name: "home" });
   } else {
     viewAlert("Debes agregar una fecha para continuar.", "error");
   }

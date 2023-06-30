@@ -31,6 +31,8 @@
 </template>
 <script setup lang="ts">
 import { useHotelStore } from "@/stores/hotel";
+
 const hotelStore = useHotelStore();
+
 hotelStore.getHotelDataSet();
 </script>

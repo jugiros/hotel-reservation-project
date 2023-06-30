@@ -37,13 +37,11 @@
 <script setup lang="ts">
 import { useHotelStore } from "@/stores/hotel";
 import { storeToRefs } from "pinia";
-
 import QualificationStars from "@/components/QualificationStars.vue";
-import ViewHotel from "@/components/viewHotel.vue";
+import ViewHotel from "@/components/ViewHotel.vue";
 
 const hotelStore = useHotelStore();
 let { bestHotel, viewBestHotel } = storeToRefs(hotelStore);
-console.log(bestHotel);
 </script>
 
 <style lang="scss" scoped>

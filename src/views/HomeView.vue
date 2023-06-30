@@ -1,5 +1,6 @@
 <template>
   <hotel-card />
+  <p>{{ hotelName }}</p>
 </template>
 
 <script setup lang="ts">
@@ -12,6 +13,9 @@ import HotelCard from "@/components/HotelCard.vue";
 let hotel = ref<Hotel>();
 let hotelName = "";
 
+/**
+ * Data and method for unit test.
+ */
 const arrDays = [
   {
     dateString: "string",
@@ -43,4 +47,8 @@ validHotel(arrDays, true);
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss"></style>
+<style lang="scss" scoped>
+p {
+  display: none;
+}
+</style>

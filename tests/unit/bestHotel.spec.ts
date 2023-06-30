@@ -1,21 +1,29 @@
 import { shallowMount } from "@vue/test-utils";
 import HomeView from "@/views/HomeView.vue";
 
-describe("HelloWorld.vue", () => {
+describe("HomeView.vue", () => {
   it("Validate the best hotel for the reservation", () => {
     const arrDays = [
       {
-        id: 0,
+        dateString: "string",
+        weekend: true,
+      },
+      {
+        dateString: "string",
+        weekend: true,
+      },
+      {
+        dateString: "string",
+        weekend: true,
+      },
+      {
+        dateString: "string",
         weekend: false,
       },
       {
-        id: 1,
+        dateString: "string",
         weekend: false,
       },
-      {
-        id: 2,
-        weekend: false,
-      }
     ];
 
     const wrapper = shallowMount(HomeView);

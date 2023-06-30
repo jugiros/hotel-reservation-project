@@ -75,6 +75,11 @@ const getBestOffer = (days: Day[], rewardClient: boolean): Hotel => {
   return validCostHotelData(arrCostHotel);
 };
 
+/**
+ * Function to display the alert message and be able to use it in any component.
+ * @param msg
+ * @param event
+ */
 const viewAlert = (msg: string, event: string) => {
   const alertStore = useAlertStore();
   const alert: Alert = {

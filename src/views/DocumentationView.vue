@@ -26,7 +26,6 @@
   h2 PUG
   p Dentro de la implementaci&oacute;n del aplicativo se agreg&oacute; la dependencia PUG. Esta dependencia ayuda a reducir las l&iacute;neas de c&oacute;digo dentro de la implementaci&oacute;n de html. Tambi&eacute;n ayuda a validar la correcta implementaci&oacute;n de las etiquetas ya que se obtiene un error en el caso de que se aplique de manera incorrecta la identaci&oacute;n.
 </template>
-<script/>
 
 <style lang="scss" scoped>
 .container-views {
