@@ -9,7 +9,6 @@
 <style lang="scss">
 @import "./styles/mainStyle";
 @import "./styles/modal.css";
-@import "./styles/qualification";
 </style>
 
 <script setup lang="ts">
